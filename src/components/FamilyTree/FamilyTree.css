@@ -1,0 +1,17 @@
+.family-tree div {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid tan;
+    border-radius: 10px;
+}
+
+.flex{
+    display:flex;
+}
+
+button{
+    background-color: orangered;
+    color: white;
+    border:none;
+    
+}
