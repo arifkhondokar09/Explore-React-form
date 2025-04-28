@@ -9,7 +9,7 @@ const ControlledField = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-     
+
         console.log(name, password, email)
 
 
@@ -26,7 +26,7 @@ const ControlledField = () => {
 
 
     const handleEmailOnChange = (e) => {
-   setEmail (e.target.value)
+        setEmail(e.target.value)
     }
     const handlePasswordOnChange = (e) => {
         console.log(e.target.value);
@@ -44,9 +44,9 @@ const ControlledField = () => {
             <form onSubmit={handleSubmit} >
                 <input type="text" name="name" defaultValue={name} onChange={handleNameOnChange} id="name" placeholder='Your Name' />
                 <br />
-                <input type="email" name="email" placeholder='Your Email' id=""  onChange={handleEmailOnChange} defaultValue={email} />
+                <input type="email" name="email" placeholder='Your Email' id="" onChange={handleEmailOnChange} defaultValue={email} />
                 <br />
-                <input type="password" name="password" onChange={handlePasswordOnChange} placeholder="Type Password" id=""  />
+                <input type="password" name="password" onChange={handlePasswordOnChange} placeholder="Type Password" id="" />
                 <br />
                 <input type="submit" value="Submit" />
             </form>
